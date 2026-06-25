@@ -3,7 +3,7 @@ import { useState } from "react";
 const navItems = [
   { label: "Our Story",  section: "our-story" },
   { label: "Product",    section: "product" },
-  { label: "Contact Us", section: "contact" },
+  { label: "Contact Us", section: "contact-us" },
   { label: "Recipes",    section: "recipes" },
   { label: "Review",     section: "review" },
 ];
@@ -111,10 +111,10 @@ export default function MenuBar({ onNavigate }) {
               }}
             >
               {item.label}
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              {/* <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                 stroke="#5a2a1a" strokeWidth="2.5" strokeLinecap="round">
                 <polyline points="6 9 12 15 18 9" />
-              </svg>
+              </svg> */}
             </button>
             {i < navItems.length - 1 && (
               <div style={{ padding: "0 28px" }}>

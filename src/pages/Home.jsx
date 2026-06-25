@@ -4,13 +4,18 @@ import Footer from "../assets/component/Footer";
 import ChatbotButton from "../assets/component/Chatbot_button";
 import MenuBar from "../assets/component/MenuBar";
 import OurStory from "./OurStory";
+import ContactUs from "./ContactUs";
 
 export default function Home() {
   const ourStoryRef = useRef(null);
+  const contactUsRef = useRef(null);
 
   const scrollToSection = (section) => {
     if (section === "our-story" && ourStoryRef.current) {
       ourStoryRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    if (section === "contact-us" && contactUsRef.current) {
+      contactUsRef.current.scrollIntoView({ behavior: "smooth" });
     }
     // add more sections here later e.g. product, contact etc
   };
@@ -59,6 +64,9 @@ export default function Home() {
         {/* ── OUR STORY SECTION ── */}
         <div ref={ourStoryRef}>
           <OurStory />
+        </div>
+        <div ref={contactUsRef}>
+          <ContactUs></ContactUs>
         </div>
 
         {/* ── FOOTER ── */}
