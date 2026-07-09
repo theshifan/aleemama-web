@@ -1,13 +1,35 @@
 import { useEffect, useRef, useState } from "react";
 import InstagramCardPlaceholder from "../assets/component/InstagramCard";
+import rv1 from "../assets/component/Review/1.png"
+import rv2 from "../assets/component/Review/2.png"
+import rv3 from "../assets/component/Review/3.png"
+import rv4 from "../assets/component/Review/4.png"
+import rv5 from "../assets/component/Review/5.png"
+import rv6 from "../assets/component/Review/6.png"
+import rv7 from "../assets/component/Review/7.png"
+import rv8 from "../assets/component/Review/8.png"
+import rv9 from "../assets/component/Review/9.png"
+import rv10 from "../assets/component/Review/10.png"
+import rv11 from "../assets/component/Review/11.png"
+import rv12 from "../assets/component/Review/12.png"
+import rv13 from "../assets/component/Review/13.png"
+import rv14 from "../assets/component/Review/14.png"
 
 const reviews = [
-  { id: 1, username: "priya_mama", myPictureUrl: null, caption: "My baby absolutely loves the Sprouted Ragi Powder! So wholesome and natural 💛", likes: "124" },
-  { id: 2, username: "anu_kitchen", myPictureUrl: null, caption: "Finally found something I can trust for my little one. No preservatives, no sugar! 🌿", likes: "98" },
-  { id: 3, username: "sreeja_momlife", myPictureUrl: null, caption: "Grandmother approved nutrition ❤️ My 8 month old finishes every spoon!", likes: "210" },
-  { id: 4, username: "divya.r", myPictureUrl: null, caption: "The multigrain mix is a game changer. Pure, simple, real food 🙌", likes: "76" },
-  { id: 5, username: "nitha_family", myPictureUrl: null, caption: "Been using aleeMAMA for 3 months now. Best decision ever!", likes: "183" },
-  { id: 6, username: "reshma_baby", myPictureUrl: null, caption: "Love that I can actually read every ingredient. No hidden stuff! 🌾", likes: "145" },
+  { id: 1, username: "priya_mama", myPictureUrl: rv1, caption: "My baby absolutely loves the Sprouted Ragi Powder! So wholesome and natural 💛", likes: "124" },
+  { id: 2, username: "anu_kitchen", myPictureUrl: rv2, caption: "Finally found something I can trust for my little one. No preservatives, no sugar! 🌿", likes: "98" },
+  { id: 3, username: "sreeja_momlife", myPictureUrl: rv3, caption: "Grandmother approved nutrition ❤️ My 8 month old finishes every spoon!", likes: "210" },
+  { id: 4, username: "divya.r", myPictureUrl: rv4, caption: "The multigrain mix is a game changer. Pure, simple, real food 🙌", likes: "76" },
+  { id: 5, username: "nitha_family", myPictureUrl: rv5, caption: "Been using aleeMAMA for 3 months now. Best decision ever!", likes: "183" },
+  { id: 6, username: "reshma_baby", myPictureUrl: rv6, caption: "Love that I can actually read every ingredient. No hidden stuff! 🌾", likes: "145" },
+  { id: 7, username: "reshma_baby", myPictureUrl: rv7, caption: "Love that I can actually read every ingredient. No hidden stuff! 🌾", likes: "145" },
+  { id: 8, username: "reshma_baby", myPictureUrl: rv8, caption: "Love that I can actually read every ingredient. No hidden stuff! 🌾", likes: "145" },
+  { id: 9, username: "reshma_baby", myPictureUrl: rv9, caption: "Love that I can actually read every ingredient. No hidden stuff! 🌾", likes: "145" },
+  { id: 10, username: "reshma_baby", myPictureUrl: rv10, caption: "Love that I can actually read every ingredient. No hidden stuff! 🌾", likes: "145" },
+  { id: 11, username: "reshma_baby", myPictureUrl: rv11, caption: "Love that I can actually read every ingredient. No hidden stuff! 🌾", likes: "145" },
+  { id: 12, username: "reshma_baby", myPictureUrl: rv12, caption: "Love that I can actually read every ingredient. No hidden stuff! 🌾", likes: "145" },
+  { id: 13, username: "reshma_baby", myPictureUrl: rv13, caption: "Love that I can actually read every ingredient. No hidden stuff! 🌾", likes: "145" },
+  { id: 14, username: "reshma_baby", myPictureUrl: rv14, caption: "Love that I can actually read every ingredient. No hidden stuff! 🌾", likes: "145" },
 ];
 
 export default function Review() {
@@ -136,7 +158,7 @@ export default function Review() {
               }}
             >
               <InstagramCardPlaceholder
-                // myPictureUrl={review.myPictureUrl}
+                myPictureUrl={review.myPictureUrl}
                 // username={review.username}
                 // caption={review.caption}
                 // likes={review.likes}
