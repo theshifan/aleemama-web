@@ -5,10 +5,15 @@ import ChatbotButton from "../assets/component/Chatbot_button";
 import MenuBar from "../assets/component/MenuBar";
 import OurStory from "./OurStory";
 import ContactUs from "./ContactUs";
+import Products from "./Products";
+import Review from "./Review";
 
 export default function Home() {
   const ourStoryRef = useRef(null);
   const contactUsRef = useRef(null);
+  const productRef = useRef(null);
+  const reviewRef = useRef(null);
+
 
   const scrollToSection = (section) => {
     if (section === "our-story" && ourStoryRef.current) {
@@ -16,6 +21,12 @@ export default function Home() {
     }
     if (section === "contact-us" && contactUsRef.current) {
       contactUsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    if (section === "product" && productRef.current) {
+      productRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    if (section === "review" && reviewRef.current) {
+      reviewRef.current.scrollIntoView({ behavior: "smooth" });
     }
     // add more sections here later e.g. product, contact etc
   };
@@ -64,6 +75,12 @@ export default function Home() {
         {/* ── OUR STORY SECTION ── */}
         <div ref={ourStoryRef}>
           <OurStory />
+        </div>
+        <div ref={productRef}>
+          <Products></Products>
+        </div>
+        <div ref={reviewRef}>
+          <Review></Review>
         </div>
         <div ref={contactUsRef}>
           <ContactUs></ContactUs>

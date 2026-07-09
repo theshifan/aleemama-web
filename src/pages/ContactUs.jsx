@@ -1,7 +1,6 @@
 import aleemamaImg from '../assets/aleemama_face.png';
 import Footer from "../assets/component/Footer";
 import ChatbotButton from "../assets/component/Chatbot_button";
-import MenuBar from "../assets/component/MenuBar";
 
 export default function ContactUs({ onNavigate }) {
   return (
@@ -12,7 +11,6 @@ export default function ContactUs({ onNavigate }) {
       fontFamily: "'Nunito', 'Comic Sans MS', cursive",
       overflow: "hidden",
     }}>
-      <MenuBar onNavigate={onNavigate} />
 
       {/* ── MAIN AREA (below topbar) ── */}
       <div style={{
@@ -103,6 +101,7 @@ export default function ContactUs({ onNavigate }) {
               position: "absolute",
               left: 0, top: 0, bottom: 0,
               width: 9.5,
+              // height:2000,
               background: "#f5d533",
             }} />
             {/* Grandma image bottom-aligned */}

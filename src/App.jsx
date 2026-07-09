@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Aleemama from "./pages/Aleemama";
 import OurStory from "./pages/OurStory";
 import ContactUs from "./pages/ContactUs";
+import ProductCard from "./pages/Products"
 
 // Placeholder components for demo
 const Recipes = () => <div style={{ padding: "2rem" }}><h2>Recipes Page</h2></div>;
@@ -19,6 +20,8 @@ export default function App() {
           <Route path="our-story" element={<OurStory />} /> {/* Renders at domain.com/our-story */}
           <Route path="recipes" element={<Recipes />} /> {/* Renders at domain.com/recipes */}
           <Route path="contact-us" element={<ContactUs/>}/>
+          <Route path="product" element={<ProductCard />} />
+          {/* <Route path="/product/:id" element={<ProductDetail />} /> */}
           
         </Route>
       </Routes>

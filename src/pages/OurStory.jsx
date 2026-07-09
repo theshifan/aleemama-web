@@ -15,8 +15,8 @@ export default function OurStory() {
       </h2>
 
       <p style={paraStyle}>
-        When a grandmother picked up a jar of baby food from the store and read the label — sugar, preservatives,
-        ingredients she couldn't even pronounce — she knew something was wrong.
+        When a grandmother picked up a jar of baby food from the store and read the label sugar, preservatives,
+        ingredients she couldn't even pronounce she knew something was wrong.
       </p>
       <p style={centreStyle}>"I wouldn't feed this to my grandchild," she said.</p>
       <p style={centreStyle}>So she did what grandmothers do best. She made it herself.</p>
@@ -34,13 +34,13 @@ export default function OurStory() {
         grandmother would give her own family. Every jar is made fresh. Every ingredient is real.
       </p>
 
-      <div style={dividerStyle} />
 
       {/* ── SECTION 2: Why We Do This ── */}
       <p style={centreStyle}>
         Every product meets one simple standard: Would we feed this to our own children?
       </p>
       <p style={centreStyle}>If the answer is no, it doesn't leave our kitchen.</p>
+      <div style={dividerStyle} />
 
       <h2 style={headingStyle}>Why We Do This</h2>
 
@@ -79,7 +79,7 @@ export default function OurStory() {
 
       <p style={paraStyle}>
         Whether you're a new mom looking for pure nutrition for your baby, someone seeking natural alternatives to
-        sugary drinks, or a family that values real, wholesome food — we're here for you.
+        sugary drinks, or a family that values real, wholesome food we're here for you.
       </p>
       <p style={centreStyle}>
         Every spoonful of aleeMAMA is a promise: real food, made with real care, for real health.

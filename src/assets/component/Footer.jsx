@@ -1,7 +1,9 @@
 // src/component/Footer.jsx
-export default function Footer() {
+export default function Footer({bgColor = "#f5d533"}) {
   return (
     <div style={{ 
+      background: bgColor,
+      transition: "background 0.4s ease", 
       position: "fixed", 
       bottom: 0, 
       left: 0, 
